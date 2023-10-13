@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: lightgrey;
+}
+
+
+/* Header that stays at the top */
+header {
+	font: 25px arial black;
+	padding: 25px;
+	background-color: rgba(172,172,172,1.00);
+	margin: -11px -10px 100px -10px;
+	z-index: 11;
+	position: fixed;
+	width: 100%;
+	height: 5%;
+	opacity: 60%;
+	transition: 0.2s ease-in-out;
+	border: 3px #6d6f73 solid;
+}
+header:hover {
+	opacity: 100%;
+  	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+}
+header:hover div {
+	opacity: 75%
+}
+header div {
+	float: left;
+	padding: 16px;
+	transition: 0.3s ease-out
+}
+header div:hover {
+	opacity: 100%
+}
+.youtubeicon {
+	transform: scale(20%) translate(-500px, -600px);
+}
+.instagramicon {
+	transform: scale(20%) translate(-1500px, -600px)
+}
+.discordicon {
+	transform: scale(20%) translate(-2500px, -600px)
+}
+.raccoonicon {
+	float: right;
+	transform: scale(7%) translate(5000px, -9650px)
+}
+.raccoonicontxt {
+	float: right;
+	transform: translate(735px, -290px);
+	color: rgba(50,50,50,1.00);
+}
+
+
+/* Side nav bar */
+.sidenav {
+	height: 100%;
+	width: 160px;
+	background-color: rgba(172,172,172,1.00);
+	z-index: 10;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-top: 60px;
+	text-align: center;
+	transform: translate(-170px);
+	transition: 0.4s ease-in-out;
+	opacity: 100%
+}
+.sidenav:hover {
+	transform: translate(0px)
+}
+.sidenav a {
+	padding: 50px 0px 0px 8px;
+	text-decoration: none;
+	color: rgba(50,50,50,1.00);
+	display: block;
+	transition: 0.2s ease-in-out;
+}
+.sidenav a:hover {
+	transform: translate(7px);
+}
+.arrow {
+	transform: scale(50%) translate(255px, -575px);
+	opacity: 100%;
+	transition: 0.6s
+}
+.sidenav:hover .arrow {
+	transform: scale(50%) translate(255px, -575px) rotate(-180deg);
+	opacity: 20%
+}
+
+
+/* Goes above the Boo Image so that it doesn't go into the header */
+.headspacing {
+	height: 72px;
+}
+
+/* Header image */
+.imgheader {
+	width: 500px;
+	height: 350px;
+	background-image: url("https://cdn.discordapp.com/attachments/578037979327496212/1157863810464489593/IMG_2955.jpg?ex=651a2834&is=6518d6b4&hm=f17595f30b5cc4fee94866b48403ba7b84b8b6e183d39de7b0bc6303209e15a9&");
+	background-size: 100%;
+	background-position: center center;
+	border: 3px black solid;
+	margin: 0px auto 0px auto;
+	overflow: hidden;
+	transition: 0.2s ease-in-out;
+}
+.imgheader:hover {
+	background-size: 115%
+}
+.imgheader:active {
+	background-image: url("https://cdn.discordapp.com/attachments/578037979327496212/1157863811454353478/IMG_2958.jpg?ex=651a2834&is=6518d6b4&hm=be64dc866ac4deeaba4ee0a48ea19e753428ceb6837ce6c541eb875e76c13c3d&");
+}
+
+
+
+/* Affects all text */
+.main {
+	padding-left: 50px;
+	font-size: 25px;
+	font-family: arial;
+	line-height: 50px;
+}
+.main h1 {
+	text-align: center;
+}
+
+/* 4 Videos side by side */
+.videos h4 {
+	text-align: center;
+}
+.videos iframe {
+	box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.5);
+	transition: 0.1s;
+	margin: auto auto auto auto
+}
+.videos iframe:hover {
+	transform: translate(0px, -10px)
+}
+
+
+
+.art h4 {
+	text-align: center;
+}
+.artimg1 {
+	width: 681px;
+	height: 384px;
+	float: left;
+	margin-left: 50px;
+	background-image: url("https://media.discordapp.net/attachments/578037979327496212/1158067302860869753/image.png?ex=651ae5b8&is=65199438&hm=8ae396841b221be8959f40209db99c19d94e2a72161432517e77de9b9b48c1fd&=&width=1123&height=633");
+	background-position: center center;
+	overflow: hidden;
+	box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.5);
+	transition: 0.2s ease-in-out;
+}
+.artshadowbox1 {
+	width: 681px;
+	height: 384px;
+	background-color: black;
+	opacity: 0%;
+	transition: 0.2s ease-in-out;
+
+}
+.artimg1:hover {
+	transform: scale(1.05)
+}
+.artimg1:hover .artshadowbox1 {
+	opacity: 35%;
+}
+.artimg1:hover .arttxt1 {
+	transform: translate(0px, -150px)
+}
+.arttitle1 {
+	clear: both;
+	margin: 25px 25px 0px 800px;
+	width: fit-content;
+	transform: translate(0px, -250px);
+}
+
+
+
+
+.artimg2 {
+	width: 538px;
+	height: 644px;
+	float: right;
+	clear: both;
+	margin: 25px 50px 0px 0px;
+	background-image: url("https://cdn.discordapp.com/attachments/578037979327496212/1158074112242110504/image.png?ex=651aec10&is=65199a90&hm=bed1fd8b2f41f7adbf5d1a8da7730cdb10b519f70e08da8bd5c38144108183c9&");
+	background-position: center center;
+	overflow: hidden;
+	box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.5);
+	transition: 0.2s ease-in-out;
+}
+.artshadowbox2 {
+	width: 538px;
+	height: 644px;
+	background-color: black;
+	opacity: 0%;
+	transition: 0.2s ease-in-out
+}
+.artimg2:hover {
+	transform: scale(1.05)
+}
+.artimg2:hover .artshadowbox2{
+	opacity: 35%;
+}
+.artimg2:hover .arttxt2 {
+	transform: translate(0px, -200px)
+}
+.arttitle2 {
+	clear: both;
+	transform: translate(75px, -400px);
+	width: fit-content;
+}
+
+
+
+
+.artimg3 {
+	width: 576px;
+	height: 576px;
+	float: left;
+	clear: both;
+	margin: 25px 0px 0px 50px;
+	background-image: url("https://cdn.discordapp.com/attachments/578037979327496212/1158080060251709440/image.png?ex=651af19a&is=6519a01a&hm=7b850f63024ee238da4dd0bdcec20fe6f585098c880702ce252f2ac70210c52a&");
+	background-position: center center;
+	overflow: hidden;
+	box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.5);
+	transition: 0.2s ease-in-out;
+}
+.artshadowbox3 {
+	width: 576px;
+	height: 576px;
+	background-color: black;
+	opacity: 0%;
+	transition: 0.2s ease-in-out
+}
+.artimg3:hover {
+	transform: scale(1.05)
+}
+.artimg3:hover .artshadowbox3{
+	opacity: 35%;
+}
+.artimg3:hover .arttxt3 {
+	transform: translate(0px, -150px)
+}
+.arttitle3 {
+	clear: both;
+	margin: 25px 25px 0px 750px;
+	width: fit-content;
+	transform: translate(0px, -250px);
+}
+
+
+
+.arttxt1, .arttxt2, .arttxt3 {
+	text-align: center;
+	color: white;
+	transition: 0.2s ease-in-out;
+}
+
+
+
+
+.gaming {
+	clear:both;
+}
+.gaming li {
+	transition: 0.2s ease;
+}
+.gaming li:hover {
+	transform: translate(5px);
+	color: gray
+}
+
+.gamingimg1, .gamingimg2, .gamingimg3, .gamingimg4, .gamingimg5, .gamingimg6, .gamingimg7, .gamingimg8, .gamingimg9, .gamingimg10 {
+	width: 100px;
+	transition: 1s ease-in-out;
+}
+
+/* Hollow Knight */
+.gaminglist1:hover .gamingimg1 {
+	width: 400px;
+}
+
+/* TOTK/BOTW */
+.gaminglist2:hover .gamingimg2 {
+	width: 400px;
+}
+
+/* Undertale/Deltarune */
+.gaminglist3:hover .gamingimg3 {
+	width: 400px;
+}
+
+/* Terraria */
+.gaminglist4:hover .gamingimg4 {
+	width: 400px;
+}
+
+/* Stardew Valley */
+.gaminglist5:hover .gamingimg5 {
+	width: 400px;
+}
+
+/* Super Smash Bros. Ultimate */
+.gaminglist6:hover .gamingimg6 {
+	width: 400px;
+}
+
+/* Portal 2 */
+.gaminglist7:hover .gamingimg7 {
+	width: 400px;
+}
+
+/* Inscryption */
+.gaminglist8:hover .gamingimg8 {
+	width: 400px;
+}
+
+/* The Stanley Parable */
+.gaminglist9:hover .gamingimg9 {
+	width: 400px;
+}
+
+/* Incredibox */
+.gaminglist10:hover .gamingimg10 {
+	width: 400px;
+}
+
+
+
+
+.footer {
+	text-align: center;
+	font: 7px gray
+}
